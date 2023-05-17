@@ -32,9 +32,11 @@ cambia_apellido('Bryant',0)
 print (estudiantes)
 
 #   3) En el directorio_deportes, cambia "Messi" por "Andrés".
-def cambia_jugador(nombre):
-    for depo in directorio_deportes
-    for 
+def cambia_jugador(nombre, deporte):
+    for deporte in directorio_deportes
+        if deporte = directorio_deportes.key
+    # for depo in directorio_deportes:
+    # for 
     pass
 
-cambia_jugador("messi")
+cambia_jugador("messi", "futbol")
