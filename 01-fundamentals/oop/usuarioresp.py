@@ -6,10 +6,7 @@ class Usuario:
         self.balance_cuenta = 0
     def hacer_depósito(self, amount):  # toma un argumento que es el monto del depósito
         self.balance_cuenta += amount	
-    def hacer_retiro(self, giro):  # toma un argumento que es el monto del retiro
-        self.balagitnce_cuenta -= giro	
-    def mostrar_balance_usuario(self):
-        print (f"El usuario:", self.name ,"balance: ",self.balance_cuenta)
+
 guido = Usuario()
 monty = Usuario()
 # Accediendo a los atributos de la instancia
@@ -51,12 +48,4 @@ guido.hacer_depósito(200)
 monty.hacer_depósito(50)
 monty.hacer_depósito(1000)
 print(guido.balance_cuenta)	# salida: 300
-print(monty.balance_cuenta)	# salida: 1050
-guido.hacer_retiro(13)
-monty.hacer_retiro(25)
-print(guido.balance_cuenta)	# salida: 287 ->correcto
-print(monty.balance_cuenta)	# salida: 1025 -> correcto
-
-# mostrar_balance_usuario(self): haz que este método imprima el nombre del usuario y el balance de cuenta en la terminal 
-# Ej.: “Usuario: Guido van Rossum, Balance: $150
-guido.mostrar_balance_usuario()
+print(monty.balance_cuenta)	# salida: 50
